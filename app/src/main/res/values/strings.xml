@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">imcmachine</string>
+    <string name="app_name">Calculadora de IMC</string>
+
+    <string name="textoPrincipal">Bem vindo</string>
+    <string name="textoSecundario">Calculadora IMC</string>
+
+    <string name="textoRadioButton">Este é um radio button</string>
+    <string name="textoCheckButton">Este é um Check button</string>
+
 </resources>
