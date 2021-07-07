@@ -1,109 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="visible"
-    tools:context=".MainActivity">
-
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
 
     <TextView
-        android:id="@+id/textoPrincipal"
+        android:id="@+id/textViewIMC"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="IMC Calculator"
+        android:textAlignment="center"
+        android:textColor="#4DD0E1"
+        android:textSize="48sp"
+        android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="center" />
+
+    <EditText
+        android:id="@+id/TextBoxPeso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="Descrição do texto de apresentação principal"
-        android:text="@string/textoPrincipal"
+        android:layout_margin="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:text="@string/peso_atual"
+        android:textAlignment="center" />
 
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
-
-        style="@style/text_purple" />
-
-    <TextView
-        android:id="@+id/textoSecundario"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/TextBoxAltura"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/textoSecundario"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        tools:ignore="InvalidId"
-        style="@style/text_purple"
-        />
+        android:layout_margin="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:text="@string/altura_atual"
+        android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textoRadioButton"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="124dp"
+        android:text="Calcular IMC" />
 
-    <TextView
-
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textoCheckButton"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.651" />
-
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoPrincipal"
-        tools:ignore="MissingConstraints" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="256dp"
-        android:checked="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

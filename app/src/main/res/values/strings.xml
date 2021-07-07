@@ -6,5 +6,8 @@
 
     <string name="textoRadioButton">Este é um radio button</string>
     <string name="textoCheckButton">Este é um Check button</string>
+    <string name="descri_o_do_texto_de_apresenta_o_principal">Descrição do texto de apresentação principal</string>
+    <string name="peso_atual">Informe aqui seu peso atual</string>
+    <string name="altura_atual">Informe aqui a sua altura</string>
 
 </resources>
