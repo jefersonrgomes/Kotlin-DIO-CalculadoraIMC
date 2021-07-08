@@ -1,61 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:orientation="vertical"
-    >
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textViewIMC"
-        android:layout_width="411dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="15dp"
+        android:padding="10dp"
         android:text="IMC Calculator"
         android:textAlignment="center"
         android:textColor="#4DD0E1"
-        android:textSize="48sp"
+        android:textSize="38sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="center" />
 
     <EditText
         android:id="@+id/TextBoxPeso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="100dp"
-        android:ems="10"
+        style="@style/inputStyle"
         android:inputType="textPersonName"
-        android:padding="20dp"
-        android:text="@string/peso_atual"
-        android:textAlignment="center" />
+        android:text="@string/peso_atual" />
 
     <EditText
         android:id="@+id/TextBoxAltura"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="20dp"
-        android:text="@string/altura_atual"
-        android:textAlignment="center" />
+        style="@style/inputStyle"
+        android:text="@string/altura_atual" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:id="@+id/CalcularIMCbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="124dp"
-        android:text="Calcular IMC" />
+        android:text="Calcular IMC"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
 
 </LinearLayout>
