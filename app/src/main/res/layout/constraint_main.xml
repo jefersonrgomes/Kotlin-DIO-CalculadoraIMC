@@ -3,87 +3,98 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
 
 
     <TextView
-        android:id="@+id/textViewIMC"
+        android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
 
+        android:fontFamily="casual"
         android:padding="10dp"
         android:text="@string/imc_calculator"
         android:textAlignment="center"
         android:textColor="#4DD0E1"
         android:textSize="44sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TextBoxPeso"
+        app:layout_constraintBottom_toTopOf="@+id/txtPeso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/TextBoxPeso"
+        android:id="@+id/txtPeso"
         style="@style/Widget.MaterialComponents.TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_below="@+id/textViewIMC"
+        android:layout_below="@+id/txtTitle"
         android:layout_centerHorizontal="true"
 
+        android:fontFamily="casual"
+        android:numeric="decimal"
         android:paddingLeft="100dp"
         android:paddingTop="20dp"
+
         android:paddingRight="100dp"
+
         android:paddingBottom="10dp"
-        android:text="@string/peso_atual"
+        android:singleLine="true"
+        android:text="Peso(ex: 63.5kg)"
 
         android:textAlignment="center"
-
         android:textAllCaps="false"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.43" />
 
     <EditText
-        android:id="@+id/TextBoxAltura"
+        android:id="@+id/txtAltura"
         style="@style/Widget.MaterialComponents.TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TextBoxPeso"
+        android:layout_below="@+id/txtPeso"
 
         android:layout_centerHorizontal="true"
 
         android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+
+        android:freezesText="false"
+
+        android:numeric="decimal"
+
         android:paddingLeft="100dp"
-
         android:paddingTop="20dp"
-
         android:paddingRight="100dp"
-
         android:paddingBottom="10dp"
+        android:singleLine="true"
         android:text="@string/altura_atual"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="16sp"
-        android:typeface="normal"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextBoxPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
 
     <Button
-        android:id="@+id/CalcularIMCbutton"
+        android:id="@+id/btnCalcular"
         style="@style/Platform.MaterialComponents.Light"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:fontFamily="casual"
         android:text="@string/calcular_imc"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 

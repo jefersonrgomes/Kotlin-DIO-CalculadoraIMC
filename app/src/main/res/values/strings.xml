@@ -8,5 +8,6 @@
     <string name="altura_atual"> Altura (ex: 1.65 Cm)</string>
     <string name="calcular_imc">Calcular IMC</string>
     <string name="imc_calculator">IMC Calculator</string>
+    <string name="gradient">Gradient</string>
 
 </resources>
