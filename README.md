@@ -33,6 +33,8 @@ Criação de uma calculadora de IMC simples, utilizando os recursos e tecnicas a
 # Certificado de Conclusão do Curso
 ![image](https://user-images.githubusercontent.com/10172471/125568414-3a821a20-725a-453c-b8d5-93439ff42ec3.png)
 
-# A saga Kotlin continua ... ![hd-wallpaper-of-cool-android-backpack-wallpaper-for-desktop-tablet-or-laptop-tablet-1489786096](https://user-images.githubusercontent.com/10172471/125572247-563f7262-02c0-418e-8a4a-99e4d44a0dd4.jpg)
+# A saga Kotlin continua ... 
+
+![hd-wallpaper-of-cool-android-backpack-wallpaper-for-desktop-tablet-or-laptop-tablet-1489786096](https://user-images.githubusercontent.com/10172471/125572247-563f7262-02c0-418e-8a4a-99e4d44a0dd4.jpg)
 
 
