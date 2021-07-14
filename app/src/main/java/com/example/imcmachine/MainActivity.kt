@@ -35,11 +35,42 @@ class MainActivity : AppCompatActivity() {
 
         if(peso!=null && altura!=null){
             val imc = peso / (altura * altura)
-            txtTitle.text = "Seu IMC é de $imc%f".format((imc))
+            var classificacao:String=""
+
+            when {
+                imc in 1.0 .. 18.5 -> {
+                    classificacao ="🚨 MAGREZA"
+                    txtTitle1.text = "$classificacao\n" +
+                            "Atenção, seu nivel de IMC esta muito baixo"
+                    txtTitle.text = "Seu IMC é $imc%2f".format((imc))
+                }
+                imc in 18.6 .. 24.9 -> {
+                    classificacao ="👍 NORMAL"
+                    txtTitle1.text =
+                        "$classificacao\n😀 Parabens você esta no seu nivel ideal de IMC"
+                    txtTitle.text = "Seu IMC é de $imc%2f".format((imc))
+                }
+                imc in 25.0 .. 29.9 -> {
+                    classificacao ="⚠ SOBREPESO NIVEL 1"
+                    txtTitle1.text = "$classificacao\nAtenção, seu nivel de IMC esta levemente elevado"
+                    txtTitle.text = "Seu IMC é de $imc%2f".format((imc))
+                }
+                imc in 30.0 .. 39.9 -> {
+                    classificacao="⚠ OBESIDADE NIVEL 2"
+                    txtTitle1.text = "$classificacao\n" +
+                            "Atenção, seu nivel de IMC esta acima do ideal"
+                    txtTitle.text = "Seu IMC é de $imc%2f".format((imc))
+                }
+                imc > 40.0 -> {
+                    classificacao="🚨 OBESIDADE GRAVE NIVEL 3"
+                    txtTitle1.text = "$classificacao\nMenos disso \uD83C\uDF54 \uD83C\uDF55 e mais disso \uD83D\uDEB4\u200D♂️\uD83C\uDFCB️\u200D♀"
+                    txtTitle.text = "Seu IMC é de $imc%2f".format((imc))
+                }
+            }
         }
-
-
-        /*VEJA A INTERPRETAÇÃO DO IMC
+    }
+}
+/*VEJA A INTERPRETAÇÃO DO IMC
 IMC	CLASSIFICAÇÃO	OBESIDADE (GRAU)
 MENOR QUE 18,5	MAGREZA	0
 ENTRE 18,5 E 24,9	NORMAL	0
@@ -47,41 +78,9 @@ ENTRE 25,0 E 29,9	SOBREPESO	I
 ENTRE 30,0 E 39,9	OBESIDADE	II
 MAIOR QUE 40,0	OBESIDADE GRAVE	III
 
-        RESULTADO:
-Cara expressiva Parabéns, seu IMC é 23.9 kg/m2 e você está dentro do peso adequado!
-De acordo com a sua altura e idade, o seu peso pode variar entre 50 kg e 68 kg, por isso continue tendo cuidado com a alimentação e praticando atividade física regularmente para manter o peso e prevenir doenças.
-
-IMC	PESO
-Magreza	< 18.5	< 50.4 Kg
-Normal	18.5 a 24.9	50.4 a 67.8 Kg
-Sobrepeso	24.9 a 30	67.8 a 81.7 Kg
-Obesidade	> 30	> 81.7 Kg
-
-        */
-
-
-        /*O que é IMC?
-IMC significa Índice de Massa Corporal e é um parâmetro utilizado para saber se o peso está de acordo com a altura, o que pode interferir diretamente na saúde e qualidade de vida da pessoa. Assim, a partir do resultado do IMC é possível saber também se a pessoa está dentro do peso ideal e também identificar sobrepeso, obesidade ou desnutrição em crianças, adolescentes, adultos ou idosos.
-
-Dessa forma, com o cálculo do IMC, é possível fazer algumas mudanças na rotina diária, como mudar a dieta, melhorar os hábitos alimentares e praticar atividade física de forma regular, por exemplo.
-
-Como é calculado?
-O IMC é a relação entre peso e altura e o cálculo é feito de acordo com a fórmula: IMC = peso/ (altura x altura), devendo o peso estar em kg e a altura em metro, e o resultado é dado em kg/m2. Depois de obter o resultado, é possível verificar em que faixa o IMC se encontra, podendo indicar:
-
-Magreza, quando o resultado é menor que 18,5 kg/m2;
-Normal, quando o resultado está entre 18,5 e 24,9 kg/m2;
-Sobrepeso, quando o resultado está entre 24,9 e 30 kg/m2;
-Obesidade, quando o resultado é maior que 30 kg/m2.
-Assim, de acordo com o resultado do IMC é possível também saber se existe algum risco de desenvolver doenças. Isto porque quanto maior é o valor do IMC, maior é a quantidade de gordura acumulada no corpo e maior é o risco da pessoa ter doenças como pressão alta, diabetes e doenças cardíacas.*/
-
-    }
-
-
-}
-
-
 //Tipos de Layout de tela mais utilizados (Linear; Relative; Constraint)
 
 //TextWatchers - Mudança dinamica de informação de texto conforme digitação do usuario
 //Metodos de mudança com base no eventClick (beforeTextChanged; onTextChanged, e outros)
 
+*/

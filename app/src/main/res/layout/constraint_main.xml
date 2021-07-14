@@ -8,80 +8,146 @@
 
 
     <TextView
-        android:id="@+id/txtTitle"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtTitleFixed"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-
         android:fontFamily="casual"
-        android:padding="10dp"
+
         android:text="@string/imc_calculator"
         android:textAlignment="center"
         android:textColor="#4DD0E1"
-        android:textSize="44sp"
+        android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtPeso"
+
+        app:layout_constraintBottom_toTopOf="@id/Guia1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
 
-    <EditText
-        android:id="@+id/txtPeso"
-        style="@style/Widget.MaterialComponents.TextView"
-        android:layout_width="match_parent"
+        />
+
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+
+        android:text="CONDIÇÃO"
+        android:textAlignment="center"
+        android:textColor="#4DD0E1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Guia1" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
 
-        android:layout_below="@+id/txtTitle"
+        android:fontFamily="casual"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#4DD0E1"
+        android:textSize="22sp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Guia2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/txtTitlePeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
 
         android:fontFamily="casual"
-        android:numeric="decimal"
-        android:paddingLeft="100dp"
-        android:paddingTop="20dp"
-
-        android:paddingRight="100dp"
-
-        android:paddingBottom="10dp"
-        android:singleLine="true"
-        android:text="Peso(ex: 63.5kg)"
-
+        android:text="Peso: "
         android:textAlignment="center"
+        android:textColor="#4DD0E1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Guia4"
+        app:layout_constraintEnd_toStartOf="@+id/GuiaVertical1"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Guia3" />
+
+    <EditText
+
+        android:id="@+id/txtPeso"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+
+        android:numeric="decimal"
+        android:singleLine="true"
+
+        android:hint="ex: 63.5 kg"
+        android:textAlignment="center"
+
         android:textAllCaps="false"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/Guia4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintStart_toStartOf="@id/GuiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/Guia3"
+        tools:ignore="Deprecated" />
+
+
+    <TextView
+        android:id="@+id/txtTitleAltura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="casual"
+        android:text="Altura: "
+        android:textAlignment="center"
+        android:textColor="#4DD0E1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Guia5"
+        app:layout_constraintEnd_toStartOf="@+id/GuiaVertical1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Guia4" />
 
     <EditText
         android:id="@+id/txtAltura"
+
         style="@style/Widget.MaterialComponents.TextView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/txtPeso"
-
         android:layout_centerHorizontal="true"
-
-        android:layout_marginTop="20dp"
         android:fontFamily="casual"
-
         android:freezesText="false"
 
         android:numeric="decimal"
 
-        android:paddingLeft="100dp"
-        android:paddingTop="20dp"
-        android:paddingRight="100dp"
-        android:paddingBottom="10dp"
         android:singleLine="true"
-        android:text="@string/altura_atual"
+
+        android:hint = "@string/altura_atual"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/Guia5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+        app:layout_constraintStart_toStartOf="@id/GuiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/Guia4"
+        tools:ignore="Deprecated" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -93,18 +159,57 @@
         android:fontFamily="casual"
         android:text="@string/calcular_imc"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/Guia5" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/Guia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="513dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="468dp"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="468dp"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guia4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="468dp"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guia5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="468dp"
         app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuiaVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30"
+    />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

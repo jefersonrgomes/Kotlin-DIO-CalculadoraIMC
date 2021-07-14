@@ -4,8 +4,9 @@
     <string name="textoSecundario">Calculadora IMC</string>
 
     <string name="descri_o_do_texto_de_apresenta_o_principal">Descrição do texto de apresentação principal</string>
-    <string name="peso_atual"> Peso (ex: 63.8 Kg)</string>
-    <string name="altura_atual"> Altura (ex: 1.65 Cm)</string>
+    <string name="peso_atual"> ex: 63.8 Kg</string>
+    <string name="titulo_fixo"> CALCULADORA DE IMC</string>
+    <string name="altura_atual"> ex: 1.65 Cm</string>
     <string name="calcular_imc">Calcular IMC</string>
     <string name="imc_calculator">IMC Calculator</string>
     <string name="gradient">Gradient</string>
