@@ -23,7 +23,8 @@ Criação de uma calculadora de IMC simples, utilizando os recursos e tecnicas a
 
 - [x] Criação e personalização de Constraint Layouts através de xml
 - [x] Uso de GuideLines para melhor orientação e posicionamento 
-- [x] , recebimento de dados em tela, manipulação de dados e retorno de resultado em tela através de eventos.
+- [x] Recebimento de dados em tela, manipulação de dados e retorno de resultado em tela através de eventos.
+- [x] Personalização de projeto e implementação de conceitos abordados em outros cursos e aulas do Bootcamp (criado uma condicional em when, que valida o range do imc que foi calculado, e retorna o valor da condição e mensagem de alerta em tela.
 <p/>
 
 ## Versão final com melhorias 
@@ -31,4 +32,7 @@ Criação de uma calculadora de IMC simples, utilizando os recursos e tecnicas a
   
 # Certificado de Conclusão do Curso
 ![image](https://user-images.githubusercontent.com/10172471/125568414-3a821a20-725a-453c-b8d5-93439ff42ec3.png)
+
+# A saga Kotlin continua ... ![hd-wallpaper-of-cool-android-backpack-wallpaper-for-desktop-tablet-or-laptop-tablet-1489786096](https://user-images.githubusercontent.com/10172471/125572247-563f7262-02c0-418e-8a4a-99e4d44a0dd4.jpg)
+
 
