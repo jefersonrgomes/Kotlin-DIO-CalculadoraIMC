@@ -1,23 +1,34 @@
 # Android_Kotlin-CalculadoraIMC-SantanderBootcamp2021
-## Android | Kotlin - Calculadora de IMC - Primeiro projeto pratico do Bootcamp Santander Developer Mobile 2021 realizado na plataforma Digital Inovation One
+<img src="https://user-images.githubusercontent.com/10172471/125153349-718e6c00-e129-11eb-8f87-6bb2eca4ee5a.png" width="300px" height="100px"> <img src=https://user-images.githubusercontent.com/10172471/125569111-5491f954-d917-4297-903f-11b86e7584f9.png width="400px" height="100px">
 
-# Apresentação do Projeto
+## 📚 Projetando o primeiro aplicativo Android usando Kotlin
+<p align='left'> 
+Este projeto é parte do conteudo pratico do Bootcamp Santander Developer Mobile 2021 realizado na plataforma DIO - Digital Inovation One.
+<p/>
+
 ![image](https://user-images.githubusercontent.com/10172471/125568276-7b6003c9-7332-4974-bd1d-9fd6d7457513.png)
 
-# App no final do curso
 
-![imcCalculator01](https://user-images.githubusercontent.com/10172471/124865051-5a684680-df90-11eb-861c-f038975b3f69.JPG)
+### 🚀 Objetivo
+<p align='left'> 
+Criação de uma calculadora de IMC simples, utilizando os recursos e tecnicas aprendidas até o momento.
+  Criação de Layouts xml, recebimento de dados em tela, manipulação de dados e retorno de resultado em tela através de eventos.
+<p/>
 
-# Versão final com melhorias 
+## Versão conceitual
+<img src="https://user-images.githubusercontent.com/10172471/124865051-5a684680-df90-11eb-861c-f038975b3f69.JPG" height="450px">
 
+### ✏ Conteudo desenvolvido neste curso:
+<p align='left'> 
 
-imagens para edição do REadme
+- [x] Criação e personalização de Constraint Layouts através de xml
+- [x] Uso de GuideLines para melhor orientação e posicionamento 
+- [x] , recebimento de dados em tela, manipulação de dados e retorno de resultado em tela através de eventos.
+<p/>
 
-![GifIMCMachine](https://user-images.githubusercontent.com/10172471/125567886-256bed62-350d-408e-a0d2-2113866579f8.gif)
-![imagem IMC Machine kotlin](https://user-images.githubusercontent.com/10172471/125567902-5748c834-9b47-4728-84fc-1dd15d04e8ae.JPG)
-
-
-## Certificado
-
+## Versão final com melhorias 
+  <img src="https://user-images.githubusercontent.com/10172471/125567886-256bed62-350d-408e-a0d2-2113866579f8.gif" height="450px"> 
+  
+# Certificado de Conclusão do Curso
 ![image](https://user-images.githubusercontent.com/10172471/125568414-3a821a20-725a-453c-b8d5-93439ff42ec3.png)
 
