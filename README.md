@@ -1,5 +1,5 @@
 # Android_Kotlin-CalculadoraIMC-SantanderBootcamp2021
-<img src="https://user-images.githubusercontent.com/10172471/125153349-718e6c00-e129-11eb-8f87-6bb2eca4ee5a.png" width="300px" height="100px"> <img src=https://user-images.githubusercontent.com/10172471/125569111-5491f954-d917-4297-903f-11b86e7584f9.png width="400px" height="100px">
+<img src="https://user-images.githubusercontent.com/10172471/125153349-718e6c00-e129-11eb-8f87-6bb2eca4ee5a.png" width="150px" height="50px"> <img src=https://user-images.githubusercontent.com/10172471/125569111-5491f954-d917-4297-903f-11b86e7584f9.png width="200px" height="50px">
 
 ## 📚 Projetando o primeiro aplicativo Android usando Kotlin
 <p align='left'> 
